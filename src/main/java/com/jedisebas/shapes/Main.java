@@ -20,7 +20,7 @@ public class Main {
         try {
             Figure parallelogram = new Parallelogram(2, 3, 4, 5, 1);
         } catch (WrongFigureException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
         var trapezoid = new Trapezoid(2, 3, 4, 5, 1);
