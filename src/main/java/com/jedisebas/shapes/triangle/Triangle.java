@@ -2,12 +2,14 @@ package com.jedisebas.shapes.triangle;
 
 import com.jedisebas.shapes.Figure;
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
 @Getter
 @AllArgsConstructor
 @ToString
+@EqualsAndHashCode(callSuper = false)
 public class Triangle extends Figure {
 
     final double sideA;
