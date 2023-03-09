@@ -7,11 +7,11 @@ import lombok.ToString;
 @ToString
 public class Trapezoid extends Quadrangle {
 
-    final double height;
+    final double heightA;
 
-    public Trapezoid(final double sideA, final double sideB, final double sideC, final double sideD, final double height) {
+    public Trapezoid(final double sideA, final double sideB, final double sideC, final double sideD, final double heightA) {
         super(sideA, sideB, sideC, sideD);
-        this.height = height;
+        this.heightA = heightA;
     }
 
     public Trapezoid() {
@@ -20,6 +20,6 @@ public class Trapezoid extends Quadrangle {
 
     @Override
     public double area() {
-        return (sideA + sideB) * height / 2;
+        return (sideA + sideB) * heightA / 2;
     }
 }
