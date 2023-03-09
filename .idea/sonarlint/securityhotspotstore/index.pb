@@ -1,8 +1,6 @@
 
 p
 @src/main/java/com/jedisebas/shapes/quadrangle/Parallelogram.java,9/9/99bd85e4fd19adf50e4b7b418f58a25ec6d658ac
-e
-5src/main/java/com/jedisebas/shapes/circle/Circle.java,5/3/531068c090feed1435e795ce5fcd48c483b03c3d
 m
 =src/main/java/com/jedisebas/shapes/quadrangle/Quadrangle.java,4/3/4309f6a36d6a5c516d415e62605d3f9d63afa567
 ^

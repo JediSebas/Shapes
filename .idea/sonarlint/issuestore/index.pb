@@ -3,8 +3,6 @@ S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
-e
-5src/main/java/com/jedisebas/shapes/circle/Circle.java,5/3/531068c090feed1435e795ce5fcd48c483b03c3d
 ^
 .src/main/java/com/jedisebas/shapes/Figure.java,7/a/7a833e7e2371566559c3a8a58b4ce0215c649c9f
 ]
