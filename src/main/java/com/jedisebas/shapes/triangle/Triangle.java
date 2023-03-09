@@ -17,6 +17,13 @@ public class Triangle extends Figure {
     final double heightB;
     final double heightC;
 
+    public static Triangle createEquilateralTriangle(final double side, final double height) {
+        return new Triangle(side, side, side, height, height, height);
+    }
+
+    public static Triangle createIsoscelesTriangle(final double sideAB, final double sideC, final double heightAB, final double heightC) {
+        return new Triangle(sideAB, sideAB, sideC, heightAB, heightAB, heightC);
+    }
 
     @Override
     public double area() {
