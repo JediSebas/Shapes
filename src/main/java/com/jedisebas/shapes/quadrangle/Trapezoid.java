@@ -1,10 +1,8 @@
 package com.jedisebas.shapes.quadrangle;
 
 import lombok.Getter;
-import lombok.ToString;
 
 @Getter
-@ToString
 public class Trapezoid extends Quadrangle {
 
     final double heightA;
@@ -21,5 +19,16 @@ public class Trapezoid extends Quadrangle {
     @Override
     public double area() {
         return (sideA + sideB) * heightA / 2;
+    }
+
+    @Override
+    public String toString() {
+        return "Trapezoid(" +
+                "sideA=" + sideA +
+                ", sideB=" + sideB +
+                ", sideC=" + sideC +
+                ", sideD=" + sideD +
+                ", heightA=" + heightA +
+                ')';
     }
 }
