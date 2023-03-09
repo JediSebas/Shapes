@@ -11,4 +11,10 @@ class TriangleTest {
         Triangle triangle = new Triangle(5, 1, 1, 4, 1, 1);
         assertEquals(10.0, triangle.area());
     }
+
+    @Test
+    void sideZeroHeightZeroEqualsZero() {
+        Triangle triangle = new Triangle(0, 0 ,0, 0, 0, 0);
+        assertEquals(0.0, triangle.area());
+    }
 }
