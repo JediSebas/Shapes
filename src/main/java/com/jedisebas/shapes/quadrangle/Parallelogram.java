@@ -1,11 +1,13 @@
 package com.jedisebas.shapes.quadrangle;
 
 import com.jedisebas.shapes.WrongFigureException;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
 @Getter
 @ToString
+@EqualsAndHashCode(callSuper = false)
 public class Parallelogram extends Trapezoid {
 
     final double heightB;
