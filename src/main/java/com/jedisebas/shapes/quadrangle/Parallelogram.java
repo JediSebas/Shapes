@@ -31,4 +31,8 @@ public class Parallelogram extends Trapezoid {
     public static Parallelogram createRhombus(final double side, final double height) throws WrongFigureException {
         return new Parallelogram(side, side, side, side, height, height);
     }
+
+    public static Parallelogram createSquare(final double side) throws WrongFigureException {
+        return createRectangle(side, side);
+    }
 }
