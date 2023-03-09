@@ -28,4 +28,3 @@ public class Triangle extends Figure {
         return sideA + sideB + sideC;
     }
 }
-
