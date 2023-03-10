@@ -17,4 +17,10 @@ class QuadrangleTest {
         Quadrangle quadrangle = new Quadrangle(1, 2, 3, 4);
         assertEquals(0.0, quadrangle.area());
     }
+
+    @Test
+    void wrongTestForTest() {
+        Quadrangle quadrangle = new Quadrangle();
+        assertEquals(9999, quadrangle.getSideA());
+    }
 }
