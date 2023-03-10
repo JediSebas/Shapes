@@ -19,8 +19,8 @@ class QuadrangleTest {
     }
 
     @Test
-    void thisShouldNotPass() {
-        Quadrangle quadrangle = new Quadrangle(1, 2, 3, 4);
-        assertEquals(0, quadrangle.circumference());
+    void thisWillOn100ProcentFail() {
+        Quadrangle quadrangle = new Quadrangle(5, 5, 5, 5);
+        assertEquals(0.0, quadrangle.circumference());
     }
 }
