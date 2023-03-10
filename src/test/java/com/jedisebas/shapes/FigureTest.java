@@ -2,7 +2,7 @@ package com.jedisebas.shapes;
 
 import org.junit.jupiter.api.Test;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FigureTest {
 
