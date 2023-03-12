@@ -1,4 +1,4 @@
-package com.jedisebas.solids;
+package com.jedisebas.shapes.solids;
 
 public interface IVolume {
 
