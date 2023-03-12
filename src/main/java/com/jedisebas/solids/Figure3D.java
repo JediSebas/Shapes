@@ -1,4 +1,4 @@
-package com.jedisebas.solids;
+package com.jedisebas.shapes.solids;
 
 import com.jedisebas.shapes.Figure;
 import lombok.EqualsAndHashCode;
