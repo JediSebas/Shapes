@@ -1,6 +1,6 @@
 package com.jedisebas.shapes.solids.prism;
 
-import com.jedisebas.solids.Figure3D;
+import com.jedisebas.shapes.solids.Figure3D;
 
 public class Prism extends Figure3D {
 
