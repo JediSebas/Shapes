@@ -3,6 +3,7 @@ package com.jedisebas.shapes.solids.prism;
 import com.jedisebas.shapes.WrongFigureException;
 import com.jedisebas.shapes.circle.Circle;
 import com.jedisebas.shapes.quadrangle.Parallelogram;
+import com.jedisebas.shapes.quadrangle.Trapezoid;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -36,5 +37,16 @@ class PrismTest {
     @Test
     void givenNegativePrism_whenCalculateArea_thenThrowException() {
         assertThrows(IllegalArgumentException.class, () -> new Prism(new Circle(1), -1));
+    }
+
+    @Test
+    void givenPrism_whenCalculateVolume_thenReturnResult() {
+        Trapezoid base = new Trapezoid(2, 1, 3, 7, 4);
+        double height = 20;
+        Prism prism = new Prism(base, height);
+
+        double volume = base.area() * height;
+
+        assertEquals(volume, prism.volume());
     }
 }
