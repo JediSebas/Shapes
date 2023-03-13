@@ -28,6 +28,6 @@ public class Prism extends Figure3D {
 
     @Override
     public double volume() {
-        return 0;
+        return base.area() * height;
     }
 }
