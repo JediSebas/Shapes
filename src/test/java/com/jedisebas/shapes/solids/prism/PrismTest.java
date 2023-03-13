@@ -36,7 +36,8 @@ class PrismTest {
 
     @Test
     void givenNegativePrism_whenCalculateArea_thenThrowException() {
-        assertThrows(IllegalArgumentException.class, () -> new Prism(new Circle(1), -1));
+        Circle base = new Circle(1);
+        assertThrows(IllegalArgumentException.class, () -> new Prism(base, -1));
     }
 
     @Test
