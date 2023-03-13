@@ -49,4 +49,11 @@ class PrismTest {
 
         assertEquals(volume, prism.volume());
     }
+
+    @Test
+    void givenEmpty_whenCalculateArea_thenReturnZero() {
+        Prism prism = new Prism();
+
+        assertEquals(0, prism.area());
+    }
 }
