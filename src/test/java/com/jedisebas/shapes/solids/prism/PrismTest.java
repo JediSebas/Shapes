@@ -6,8 +6,7 @@ import com.jedisebas.shapes.quadrangle.Parallelogram;
 import com.jedisebas.shapes.quadrangle.Trapezoid;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 class PrismTest {
 
@@ -56,5 +55,21 @@ class PrismTest {
         Prism prism = new Prism();
 
         assertEquals(0, prism.area());
+    }
+
+    @Test
+    void givenEmpty_whenEquals_thenReturnTrue() throws WrongFigureException {
+        Prism prism1 = new Prism();
+        Prism prism2 = new Prism(Parallelogram.createSquare(0), 0);
+
+        assertEquals(prism1, prism2);
+    }
+
+    @Test
+    void givenPrisms_whenEquals_thenReturnFalse() throws WrongFigureException {
+        Prism prism1 = new Prism(new Circle(1), 1);
+        Prism prism2 = new Prism(Parallelogram.createSquare(1), 1);
+
+        assertNotEquals(prism1, prism2);
     }
 }
