@@ -22,7 +22,7 @@ public class Prism extends Figure3D {
 
     @Override
     public double circumference() {
-        return 0;
+        return base.circumference() * 2 + height * base.getCorners();
     }
 
     @Override
