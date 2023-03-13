@@ -6,16 +6,16 @@ public class Prism extends Figure3D {
 
     @Override
     public double area() {
-        return 1;
+        return 2;
     }
 
     @Override
     public double circumference() {
-        return 0;
+        return 3;
     }
 
     @Override
     public double volume() {
-        return 0;
+        return -8;
     }
 }
