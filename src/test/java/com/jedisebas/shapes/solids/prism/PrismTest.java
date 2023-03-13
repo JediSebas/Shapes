@@ -6,6 +6,7 @@ import com.jedisebas.shapes.quadrangle.Parallelogram;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class PrismTest {
 
@@ -30,5 +31,10 @@ class PrismTest {
         double circumference = base.circumference() * 2;
 
         assertEquals(circumference, prism.circumference());
+    }
+
+    @Test
+    void givenNegativePrism_whenCalculateArea_thenThrowException() {
+        assertThrows(IllegalArgumentException.class, () -> new Prism(new Circle(1), -1));
     }
 }
