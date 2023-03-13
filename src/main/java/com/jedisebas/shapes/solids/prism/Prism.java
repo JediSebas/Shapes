@@ -1,6 +1,7 @@
 package com.jedisebas.shapes.solids.prism;
 
 import com.jedisebas.shapes.Figure;
+import com.jedisebas.shapes.circle.Circle;
 import com.jedisebas.shapes.solids.Figure3D;
 import lombok.EqualsAndHashCode;
 
@@ -14,6 +15,10 @@ public class Prism extends Figure3D {
         validateNumber(height);
         this.base = base;
         this.height = height;
+    }
+
+    public Prism() {
+        this(new Circle(0), 0);
     }
 
     @Override
