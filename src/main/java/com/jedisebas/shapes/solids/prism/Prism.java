@@ -2,7 +2,9 @@ package com.jedisebas.shapes.solids.prism;
 
 import com.jedisebas.shapes.Figure;
 import com.jedisebas.shapes.solids.Figure3D;
+import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode(callSuper = false)
 public class Prism extends Figure3D {
 
     final Figure base;
