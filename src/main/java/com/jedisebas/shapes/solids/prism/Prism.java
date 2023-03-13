@@ -6,7 +6,7 @@ public class Prism extends Figure3D {
 
     @Override
     public double area() {
-        return 0;
+        return 1;
     }
 
     @Override
