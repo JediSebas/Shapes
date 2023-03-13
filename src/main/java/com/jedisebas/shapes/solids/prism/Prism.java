@@ -15,7 +15,7 @@ public class Prism extends Figure3D {
 
     @Override
     public double area() {
-        return 0;
+        return base.area() * 2 + base.circumference() * height;
     }
 
     @Override
