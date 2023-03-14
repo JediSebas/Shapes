@@ -16,7 +16,7 @@ public class TriangleBuilder {
     private double heightB;
     private double heightC;
 
-    public static TriangleBuilder getInstance() {
+    public static synchronized TriangleBuilder getInstance() {
         if (instance == null) {
             instance = new TriangleBuilder();
         }
