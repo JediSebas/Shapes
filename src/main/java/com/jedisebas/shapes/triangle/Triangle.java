@@ -35,8 +35,8 @@ public class Triangle extends Figure {
     }
 
     public static Triangle createIsoscelesTriangle(final double sideAB, final double sideC, final double heightAB, final double heightC) {
-        validateNumber(sideAB, sideC, heightAB, heightC);
-        return new Triangle(sideC, sideC, sideC, heightAB, heightAB, heightC);
+        validateNumber(sideC, sideC, heightAB, heightC);
+        return new Triangle(sideC, sideC, sideC, sideAB, heightC, sideC);
     }
 
     @Override
