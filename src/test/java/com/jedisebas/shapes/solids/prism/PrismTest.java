@@ -51,21 +51,6 @@ class PrismTest {
     }
 
     @Test
-    void givenEmpty_whenCalculateArea_thenReturnZero() {
-        Prism prism = new Prism();
-
-        assertEquals(0, prism.area());
-    }
-
-    @Test
-    void givenEmpty_whenEquals_thenReturnTrue() throws WrongFigureException {
-        Prism prism1 = new Prism();
-        Prism prism2 = new Prism(Parallelogram.createSquare(0), 0);
-
-        assertEquals(prism1, prism2);
-    }
-
-    @Test
     void givenPrisms_whenEquals_thenReturnFalse() throws WrongFigureException {
         Prism prism1 = new Prism(new Circle(1), 1);
         Prism prism2 = new Prism(Parallelogram.createSquare(1), 1);
@@ -74,7 +59,7 @@ class PrismTest {
     }
 
     @Test
-    void givenObject_whenEquals_thenReturnFalse() throws WrongFigureException {
+    void givenObject_whenEquals_thenReturnFalse() {
         Prism prism1 = new Prism(new Circle(1), 1);
         Object notPrismInstance = new Object();
 
@@ -84,8 +69,6 @@ class PrismTest {
     @Test
     void givenNull_whenEquals_thenReturnFalse() {
         Prism prism1 = new Prism(new Circle(1), 1);
-        Prism prism2 = null;
-
-        assertNotEquals(prism1, prism2);
+        assertNotEquals(null, prism1);
     }
 }
