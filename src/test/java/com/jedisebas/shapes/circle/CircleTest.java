@@ -3,6 +3,7 @@ package com.jedisebas.shapes.circle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class CircleTest {
 
@@ -14,9 +15,8 @@ class CircleTest {
     }
 
     @Test
-    void givenZero_whenCalculateCircumference_thenReturnZero() {
-        Circle circle = new Circle(0);
-        assertEquals(0.0, circle.circumference());
+    void givenZero_thenThrowException() {
+        assertThrows(IllegalArgumentException.class, () -> new Circle(0));
     }
 
     @Test

@@ -3,6 +3,7 @@ package com.jedisebas.shapes.solids.pyramid;
 import com.jedisebas.shapes.WrongFigureException;
 import com.jedisebas.shapes.circle.Circle;
 import com.jedisebas.shapes.quadrangle.Parallelogram;
+import com.jedisebas.shapes.quadrangle.Trapezoid;
 import com.jedisebas.shapes.triangle.Triangle;
 import org.junit.jupiter.api.Test;
 
@@ -32,10 +33,10 @@ class PyramidTest {
 
     @Test
     void givenPyramid_whenCalculateArea_thenReturnResult() {
-        Circle base = new Circle(1);
+        Trapezoid base = new Trapezoid(1, 1, 1 ,1, 1);
         Pyramid pyramid = new Pyramid(base, 1);
 
-        double area = base.area() + Math.sqrt(Math.pow(base.getRadius() / 2, 2) + Math.pow(pyramid.height, 2)) * base.circumference();
+        double area = base.area() + Math.sqrt(Math.pow(base.getSideA() / 2, 2) + Math.pow(pyramid.height, 2)) * base.circumference();
 
         assertEquals(area, pyramid.area());
     }
