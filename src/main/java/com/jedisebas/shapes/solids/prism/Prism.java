@@ -12,6 +12,7 @@ public class Prism extends Figure3D {
 
     public Prism(final Figure base, final double height) {
         validateNumber(height);
+        validateBase(base);
         this.base = base;
         this.height = height;
     }
