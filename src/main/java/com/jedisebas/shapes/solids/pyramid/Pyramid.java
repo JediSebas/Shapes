@@ -3,7 +3,9 @@ package com.jedisebas.shapes.solids.pyramid;
 import com.jedisebas.shapes.Figure;
 import com.jedisebas.shapes.circle.Circle;
 import com.jedisebas.shapes.solids.Figure3D;
+import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode(callSuper = false)
 public class Pyramid extends Figure3D {
 
     final Figure base;
