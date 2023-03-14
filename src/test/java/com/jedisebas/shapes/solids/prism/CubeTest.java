@@ -48,4 +48,10 @@ class CubeTest {
     void givenNegativeValue_whenCalculateArea_thenThrowException() {
         assertThrows(IllegalArgumentException.class, () -> new Cube(-1));
     }
+
+    @Test
+    void givenEmpty_whenCalculateArea_thenReturnZero() throws WrongFigureException {
+        Cube cube = new Cube();
+        assertEquals(0.0, cube.area());
+    }
 }
