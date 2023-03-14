@@ -22,10 +22,6 @@ public class Quadrangle extends Figure {
         this.sideD = sideD;
     }
 
-    public Quadrangle() {
-        this(0, 0, 0, 0);
-    }
-
     @Override
     public double area() {
         return 0;

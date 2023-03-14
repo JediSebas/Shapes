@@ -9,10 +9,6 @@ public class Cube extends Prism {
         super(Parallelogram.createSquare(side), side);
     }
 
-    public Cube() throws WrongFigureException {
-        this(0);
-    }
-
     @Override
     public double circumference() {
         return 12 * height;

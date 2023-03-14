@@ -12,10 +12,6 @@ public class Trapezoid extends Quadrangle {
         this.heightA = heightA;
     }
 
-    public Trapezoid() {
-        this(0, 0, 0, 0, 0);
-    }
-
     @Override
     public double area() {
         return (sideA + sideB) * heightA / 2;
