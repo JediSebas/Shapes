@@ -72,4 +72,12 @@ class PrismTest {
 
         assertNotEquals(prism1, prism2);
     }
+
+    @Test
+    void givenNull_whenEquals_thenReturnFalse() {
+        Prism prism1 = new Prism(new Circle(1), 1);
+        Prism prism2 = null;
+
+        assertNotEquals(prism1, prism2);
+    }
 }
