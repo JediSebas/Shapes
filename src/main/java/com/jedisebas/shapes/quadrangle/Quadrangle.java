@@ -15,6 +15,7 @@ public class Quadrangle extends Figure {
 
     public Quadrangle(final double sideA, final double sideB, final double sideC, final double sideD) {
         validateNumber(sideA, sideB, sideC, sideD);
+        setCorners(4);
         this.sideA = sideA;
         this.sideB = sideB;
         this.sideC = sideC;

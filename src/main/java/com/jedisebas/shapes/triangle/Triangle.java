@@ -20,6 +20,7 @@ public class Triangle extends Figure {
     public Triangle(final double sideA, final double sideB, final double sideC,
                     final double heightA, final double heightB, final double heightC) {
         validateNumber(sideA, sideB, sideC, heightA, heightB, heightC);
+        setCorners(3);
         this.sideA = sideA;
         this.sideB = sideB;
         this.sideC = sideC;
