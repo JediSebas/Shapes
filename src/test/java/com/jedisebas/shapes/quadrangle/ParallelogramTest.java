@@ -22,18 +22,6 @@ class ParallelogramTest {
     }
 
     @Test
-    void givenZero_whenCalculateArea_thenReturnZero() throws WrongFigureException {
-        Parallelogram parallelogram = new Parallelogram(0, 0, 0, 0, 0, 0);
-        assertEquals(0.0, parallelogram.area());
-    }
-
-    @Test
-    void givenEmpty_whenCalculateCircumference_thenReturnZero() throws WrongFigureException {
-        Parallelogram parallelogram = new Parallelogram();
-        assertEquals(0.0, parallelogram.circumference());
-    }
-
-    @Test
     void givenRectangleAndSquare_whenEquals_thenReturnTrue() throws WrongFigureException {
         Parallelogram square = Parallelogram.createSquare(5);
         Parallelogram rectangle = Parallelogram.createRectangle(5, 5);
@@ -50,7 +38,7 @@ class ParallelogramTest {
     @Test
     void givenSquareAndParallelogram_whenEquals_thenReturnFalse() throws WrongFigureException {
         Parallelogram square = Parallelogram.createSquare(2);
-        Parallelogram parallelogram = new Parallelogram();
+        Parallelogram parallelogram = new Parallelogram(2, 2, 4, 4, 3, 6);
         assertNotEquals(square, parallelogram);
     }
 

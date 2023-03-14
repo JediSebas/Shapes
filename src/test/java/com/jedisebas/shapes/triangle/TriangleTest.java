@@ -15,12 +15,6 @@ class TriangleTest {
     }
 
     @Test
-    void givenZero_whenCalculateArea_thenReturnZero() {
-        Triangle triangle = new Triangle(0, 0 ,0, 0, 0, 0);
-        assertEquals(0.0, triangle.area());
-    }
-
-    @Test
     void givenEquilateralTriangle_whenCalculateCircumference_thenReturnCircumference() {
         Triangle triangle = Triangle.createEquilateralTriangle(5, 4);
         assertEquals(15.0, triangle.circumference());

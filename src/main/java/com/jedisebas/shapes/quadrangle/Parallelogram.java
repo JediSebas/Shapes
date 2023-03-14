@@ -22,10 +22,6 @@ public class Parallelogram extends Trapezoid {
         }
     }
 
-    public Parallelogram() throws WrongFigureException {
-        this(0, 0, 0, 0, 0, 0);
-    }
-
     public static Parallelogram createRectangle(final double sideA, final double sideB) throws WrongFigureException {
         return new Parallelogram(sideA, sideA, sideB, sideB, sideB, sideA);
     }
