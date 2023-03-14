@@ -11,7 +11,7 @@ public abstract class Figure implements IArea, ICircumference {
 
     public static void validateNumber(double... numbers) {
         for (final double number : numbers) {
-            if (number < 0) {
+            if (number <= 0) {
                 throw new IllegalArgumentException();
             }
         }
