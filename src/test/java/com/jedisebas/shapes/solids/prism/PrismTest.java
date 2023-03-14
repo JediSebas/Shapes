@@ -74,6 +74,14 @@ class PrismTest {
     }
 
     @Test
+    void givenObject_whenEquals_thenReturnFalse() throws WrongFigureException {
+        Prism prism1 = new Prism(new Circle(1), 1);
+        Object notPrismInstance = new Object();
+
+        assertNotEquals(prism1, notPrismInstance);
+    }
+
+    @Test
     void givenNull_whenEquals_thenReturnFalse() {
         Prism prism1 = new Prism(new Circle(1), 1);
         Prism prism2 = null;
