@@ -71,4 +71,9 @@ class PrismTest {
         Prism prism1 = new Prism(new Circle(1), 1);
         assertNotEquals(null, prism1);
     }
+
+    @Test
+    void givenNullBase_thenThrowException() {
+        assertThrows(IllegalArgumentException.class, () -> new Prism(null, 2));
+    }
 }
