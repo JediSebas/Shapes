@@ -10,4 +10,8 @@ public class Cube extends Prism {
     public Cube(final double side) throws WrongFigureException {
         super(Parallelogram.createSquare(side), side);
     }
+
+    public Cube() throws WrongFigureException {
+        this(0);
+    }
 }
