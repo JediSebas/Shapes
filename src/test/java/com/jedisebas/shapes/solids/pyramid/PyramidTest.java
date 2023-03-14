@@ -49,10 +49,9 @@ class PyramidTest {
 
     @Test
     void givenNull_whenEquals_thenReturnFalse() {
-        Pyramid pyramid1 = null;
         Pyramid pyramid2 = new Pyramid(new Circle(1), 1);
 
-        assertNotEquals(pyramid1, pyramid2);
+        assertNotEquals(null, pyramid2);
     }
 
     @Test
