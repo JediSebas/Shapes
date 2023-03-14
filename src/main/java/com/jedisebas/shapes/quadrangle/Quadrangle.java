@@ -1,11 +1,13 @@
 package com.jedisebas.shapes.quadrangle;
 
 import com.jedisebas.shapes.Figure;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 
 @Getter
 @ToString
+@EqualsAndHashCode(callSuper = false)
 public class Quadrangle extends Figure {
 
     final double sideA;
