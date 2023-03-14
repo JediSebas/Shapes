@@ -14,4 +14,9 @@ public class Cube extends Prism {
     public Cube() throws WrongFigureException {
         this(0);
     }
+
+    @Override
+    public double circumference() {
+        return 12 * height;
+    }
 }
