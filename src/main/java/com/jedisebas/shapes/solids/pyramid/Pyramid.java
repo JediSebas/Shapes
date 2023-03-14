@@ -13,6 +13,7 @@ public class Pyramid extends Figure3D {
 
     public Pyramid(final Figure base, final double height) {
         validateNumber(height);
+        validateBase(base);
         this.base = base;
         this.height = height;
     }
