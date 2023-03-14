@@ -15,7 +15,9 @@ class PyramidTest {
         Triangle base = Triangle.createEquilateralTriangle(1, Math.sqrt(3) / 2);
         Pyramid pyramid = new Pyramid(base, 1);
 
-        assertEquals(Math.sqrt(3) / 2, pyramid.volume());
+        double volume = base.area() * pyramid.height / 3;
+
+        assertEquals(volume, pyramid.volume());
     }
 
     @Test
