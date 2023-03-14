@@ -16,7 +16,7 @@ public class TriangleChainBuilder {
 
     public static TriangleChainBuilder getInstance() {
         if (instance == null) {
-            return new TriangleChainBuilder();
+            instance = new TriangleChainBuilder();
         }
         return instance;
     }

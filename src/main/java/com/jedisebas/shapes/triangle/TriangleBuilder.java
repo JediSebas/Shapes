@@ -18,7 +18,7 @@ public class TriangleBuilder {
 
     public static TriangleBuilder getInstance() {
         if (instance == null) {
-            return new TriangleBuilder();
+            instance = new TriangleBuilder();
         }
         return instance;
     }
