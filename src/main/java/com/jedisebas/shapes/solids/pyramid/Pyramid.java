@@ -19,12 +19,20 @@ public class Pyramid extends Figure3D {
 
     @Override
     public double area() {
-        return base.area() + Math.sqrt(Math.pow((base.circumference() / base.getCorners()) / 2, 2) + Math.pow(height, 2)) * base.circumference();
+        return base.area() + areaOfOtherSides();
+    }
+
+    private double areaOfOtherSides() {
+        return Math.sqrt(Math.pow((base.circumference() / base.getCorners()) / 2, 2) + Math.pow(height, 2)) * base.circumference();
     }
 
     @Override
     public double circumference() {
-        return base.circumference() + Math.sqrt(Math.pow((base.circumference() / base.getCorners()) / 2, 2) + Math.pow(height, 2));
+        return base.circumference() + circumferenceOfOtherSides();
+    }
+
+    private double circumferenceOfOtherSides() {
+        return Math.sqrt(Math.pow((base.circumference() / base.getCorners()) / 2, 2) + Math.pow(height, 2));
     }
 
     @Override
