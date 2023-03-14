@@ -19,6 +19,6 @@ class FigureTest {
                 return 0;
             }
         };
-        assertEquals("Figure()", figure.toString());
+        assertEquals("Figure(corners=0.0)", figure.toString());
     }
 }
