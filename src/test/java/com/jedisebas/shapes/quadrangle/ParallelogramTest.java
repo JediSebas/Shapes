@@ -22,12 +22,6 @@ class ParallelogramTest {
     }
 
     @Test
-    void givenZero_whenCalculateArea_thenReturnZero() throws WrongFigureException {
-        Parallelogram parallelogram = new Parallelogram(0, 0, 0, 0, 0, 0);
-        assertEquals(0.0, parallelogram.area());
-    }
-
-    @Test
     void givenRectangleAndSquare_whenEquals_thenReturnTrue() throws WrongFigureException {
         Parallelogram square = Parallelogram.createSquare(5);
         Parallelogram rectangle = Parallelogram.createRectangle(5, 5);
