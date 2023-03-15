@@ -8,7 +8,6 @@ import lombok.Setter;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class TriangleBuilder {
 
-    private static TriangleBuilder instance;
     private double sideA;
     private double sideB;
     private double sideC;
@@ -16,11 +15,8 @@ public class TriangleBuilder {
     private double heightB;
     private double heightC;
 
-    public static synchronized TriangleBuilder getInstance() {
-        if (instance == null) {
-            instance = new TriangleBuilder();
-        }
-        return instance;
+    public static TriangleBuilder getBuilder() {
+        return new TriangleBuilder();
     }
 
     public Triangle build() {

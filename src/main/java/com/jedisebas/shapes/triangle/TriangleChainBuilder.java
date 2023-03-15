@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class TriangleChainBuilder {
 
-    private static TriangleChainBuilder instance;
     private double sideA;
     private double sideB;
     private double sideC;
@@ -14,11 +13,8 @@ public class TriangleChainBuilder {
     private double heightB;
     private double heightC;
 
-    public static synchronized TriangleChainBuilder getInstance() {
-        if (instance == null) {
-            instance = new TriangleChainBuilder();
-        }
-        return instance;
+    public static synchronized TriangleChainBuilder getBuilder() {
+        return new TriangleChainBuilder();
     }
 
     public Triangle build() {
